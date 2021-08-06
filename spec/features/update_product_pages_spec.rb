@@ -14,4 +14,13 @@ describe "the update product process" do
     expect(page).to have_content 'Zappo'
   end
 
+  it "deletes product" do
+    Product.destroy_all
+    test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
+    test_product.save
+    visit product_path(test_product)
+    click_on 'Delete'
+    expect(page).to have_content 'Product successfully removed!'
+  end
+
 end
