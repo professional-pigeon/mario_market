@@ -9,6 +9,7 @@ describe "the add product process" do
     fill_in 'Cost', :with => 3.00
     click_on 'Create Product'
     expect(page).to have_content 'Zappo'
+    expect(page).to have_content 'Album successfully added!'
   end
   
   it "gives an error when no name is entered" do
