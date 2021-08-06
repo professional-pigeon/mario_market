@@ -2,21 +2,18 @@
 <h3>This product is made in <%= @product.origin %></h3>
 <h3>This is it's cost: <%= @product.cost %></h3>
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-7">
     <% if @product.reviews.any? %>
-      <h3>products</h3>
+      <h3>Reviews</h3>
       <% @product.reviews.each do |review| %>
-        <ul>
-          <li>
-            <%= link_to review.author, product_review_path(@product, review) %> <%= review.content_body %>
-          </li>
-        </ul>
+        <p><%= link_to review.author, product_review_path(@product, review) %></p>
+        <p><%= review.content_body %></p>
       <% end %>
     <% else %>
       <p>No reviews have been published!</p>
     <% end %>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-5">
     <div class="panel">
         <h4 class="panel-heading">Edits</h4>
         <div class="panel-body">

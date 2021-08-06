@@ -14,7 +14,7 @@ Product.destroy_all
                               origin: Faker::Nation.capital_city,
                               cost: Faker::Number.between(from: 1, to: 10))
   5.times do |rev|
-    Review.create!(author: Faker::Movie.title,
+    Review.create!(author: Faker::Dessert.topping,
                         content_body: Faker::Lorem.characters(number: 90),
                         rating: Faker::Number.between(from: 1, to: 10),
                         product_id: product.id)

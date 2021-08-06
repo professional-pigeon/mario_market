@@ -9,6 +9,7 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new(review_params)
     if @review.save
+      flash[:notice] = "Review successfully removed!"
       redirect_to product_path(@product)
     else
       redirect_to product_path(@product)
@@ -17,7 +18,7 @@ class ReviewsController < ApplicationController
 
   def show
     @product = Product.find(params[:product_id])
-    @reviews = Review.find(params[:id])
+    @review = Review.find(params[:id])
     render :show
   end
 
@@ -30,7 +31,7 @@ class ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
     if @review.update(review_params)
-      # flash[:notice] = "Ingredient successfully updated!"
+
       redirect_to product_path(@review.product)
     else
       @product = Product.find(params[:product_id])
@@ -40,9 +41,10 @@ class ReviewsController < ApplicationController
 
   def destroy
     @review = Review.find(params[:id])
+    @product = @review.product
     @review.destroy
-    # flash[:notice] = "Ingredient successfully destroyed!"
-    redirect_to product_path(@review.products)
+    flash[:notice] = "Review successfully removed!"
+    redirect_to product_path(@product)
   end
 
   private
