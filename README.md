@@ -25,7 +25,7 @@
 
 ## Description
 
-This is a program dedicated to creating projects and then adding volunteers to that project.
+This is a program for a market
 
 ## Setup/Installation Requirements
 

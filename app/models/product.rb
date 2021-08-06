@@ -13,7 +13,6 @@ class Product < ApplicationRecord
     .limit(5)
     )}
 
-
   before_save(:titleize_product)
 
   private
