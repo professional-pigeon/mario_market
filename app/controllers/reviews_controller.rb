@@ -12,7 +12,6 @@ class ReviewsController < ApplicationController
       redirect_to product_path(@product)
     else
       redirect_to product_path(@product)
-      # redirect_to new_product_review_path(@product)
     end
   end
 
