@@ -1,6 +1,6 @@
 class Product < ApplicationRecord
   has_many :reviews, dependent: :destroy
-  validates :name, presence: true, uniqueness: {case_sensitive: false}
+  validates :name, presence: true
   validates :cost, presence: true
   validates :origin, presence: true
   scope :local, -> { where(origin: "USA").limit(5) }

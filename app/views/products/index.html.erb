@@ -5,6 +5,7 @@
 <% if @products.any? %>
   <div class="row">
     <div class="col-md-3">
+    <h4>Here is a list of all of our products</h4>
       <ul>
         <% @products.each do |product| %>
           <li><%= link_to product.name, product_path(product) %></li>
