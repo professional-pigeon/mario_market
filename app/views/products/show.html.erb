@@ -1,0 +1,29 @@
+  <h2><%= @product.name %></h2>
+  <div class="row">
+    <div class="col-md-6">
+      <% if @product.reviews.any? %>
+        <h3>Ingredients</h3>
+        <hr>
+
+        <% @product.reviews.each do |review| %>
+          <ul>
+            <li>
+              <%= link_to review.product, product_review_path(@recipe, ingredient) %> <%= review.content_body %>
+            </li>
+          </ul>
+        <% end %>
+      <% else %>
+        <p>No ingredients have been published for this recipe!</p>
+      <% end %>
+    </div>
+    <div class="col-md-6">
+      <div class="panel">
+          <h4 class="panel-heading">Edits</h4>
+          <div class="panel-body">
+            <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "You sure?", :method => "Delete"} %></p>
+            <p><%= link_to "Edit Product Details", edit_product_path(@product)%>
+            <p><%= link_to "Return to recipes", products_path%></p>
+          </div>
+      </div>
+    </div>
+  </div>
