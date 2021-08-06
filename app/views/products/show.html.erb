@@ -8,12 +8,12 @@
         <% @product.reviews.each do |review| %>
           <ul>
             <li>
-              <%= link_to review.product, product_review_path(@recipe, ingredient) %> <%= review.content_body %>
+              <%= link_to review.author, product_review_path(@product, review) %> <%= review.content_body %>
             </li>
           </ul>
         <% end %>
       <% else %>
-        <p>No ingredients have been published for this recipe!</p>
+        <p>No reviews have been published!</p>
       <% end %>
     </div>
     <div class="col-md-6">
@@ -22,7 +22,8 @@
           <div class="panel-body">
             <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "You sure?", :method => "Delete"} %></p>
             <p><%= link_to "Edit Product Details", edit_product_path(@product)%>
-            <p><%= link_to "Return to recipes", products_path%></p>
+            <p><%= link_to "Add a Review", new_product_review_path(@product) %></p>
+            <p><%= link_to "Return to main page", products_path%></p>
           </div>
       </div>
     </div>
