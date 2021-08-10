@@ -15,7 +15,7 @@ Product.destroy_all
                               cost: Faker::Number.between(from: 1, to: 10))
   5.times do |rev|
     Review.create!(author: Faker::Dessert.topping,
-                        content_body: Faker::Lorem.characters(number: 90),
+                        content_body: Faker::Lorem.characters(number: 50),
                         rating: Faker::Number.between(from: 1, to: 10),
                         product_id: product.id)
   end
