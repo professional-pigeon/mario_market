@@ -8,9 +8,6 @@
 - [Technologies Used](#technologies-used)
 - [Description](#description)
 - [Setup/Installation Requirements](#setup/installation-requirements)
-- [Known Bugs](#known-bugs)
-- [Valid Word Tests](#valid-word-tests)
-- [Future Plans](#future-plans)
 - [License](#license)
 - [Contact Information](#contact-information)
 
@@ -19,6 +16,7 @@
 * [Markdown](https://www.markdownguide.org/)
 * [VS studio](https://code.visualstudio.com/)
 * [Bootstrap](https://getbootstrap.com/)
+* [Rails](https://rubyonrails.org/)
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Ruby Gems](https://rubygems.org/)
 * [postgreSQL](https://www.postgresql.org/)
