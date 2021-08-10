@@ -2,6 +2,7 @@
 <h3><%= @review.content_body %></h3>
 <h3>Rating:<%= @review.rating %></h3>
 <h3> You can make changes below</h3>
+
 <%= render "layouts/add_review" %>
 
 <p><%= link_to "Delete", product_review_path(@product, @review), :data => {:confirm => "You sure?", :method => "Delete"} %></p>

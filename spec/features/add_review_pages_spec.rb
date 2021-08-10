@@ -14,5 +14,14 @@ describe "the add review process" do
     expect(page).to have_content 'Barry'
     expect(page).to have_content 'Review successfully created!'
   end
+
+  it "gives an error when no fields are entered is entered" do
+    test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
+    test_product.save
+    visit product_path(test_product)
+    click_link 'Add a Review'
+    click_on 'Create Review'
+    expect(page).to have_content "Author can't be blank"
+  end
   
 end
