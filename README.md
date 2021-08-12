@@ -29,11 +29,10 @@ This is a program for a market
 
 * Clone this repository from github to your desktop: [Github link for this project](https://github.com/professional-pigeon/Vocab_charity)
 * navigate to the top level of the directory
-* run "gem install bundler" then "bundle install" in your terminal
+* run "bundle install" in your terminal
 * Install [postgreSQL](https://www.postgresql.org/) using instructions for your OS on their website.
 * To use application you'll need to open a postgres server in a terminal and a rails server
-* install all dependencies with bundle install
-* in your terminal you can run 'rspec' to run all tests, and 'ruby app.rb' to run the website while your postgres server is running.
+* Install all dependencies with bundle install
 
 ## License
 
