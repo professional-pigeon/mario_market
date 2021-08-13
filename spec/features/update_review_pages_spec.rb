@@ -17,7 +17,7 @@ describe "the update review process" do
     expect(page).to have_content 'Barry'
   end
 
-  it "fail to edit a review if fields aren't filled out" do
+  it "fails to edit a review if fields aren't filled out" do
     user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
     login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})

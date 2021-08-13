@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-  before_action :only => [:edit, :destroy, :show] do
+  before_action :only => [:edit, :destroy, :show, :update] do
     redirect_to landings_path unless current_user && current_user.admin
   end
 

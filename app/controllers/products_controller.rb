@@ -1,6 +1,6 @@
 
 class ProductsController < ApplicationController
-  before_action :only => [:new, :edit, :create, :destroy] do
+  before_action :only => [:new, :edit, :create, :destroy, :update] do
     redirect_to landings_path unless current_user && current_user.admin
   end
 
