@@ -3,6 +3,8 @@ require 'rails_helper'
 describe "the add review process" do
   it "adds a new review to a product" do
     Product.destroy_all
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     visit product_path(test_product)
@@ -16,6 +18,8 @@ describe "the add review process" do
   end
 
   it "gives an error when no fields are entered is entered" do
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     visit product_path(test_product)

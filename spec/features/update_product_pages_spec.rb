@@ -3,6 +3,8 @@ require 'rails_helper'
 describe "the update product process" do
   it "changes the product content" do
     Product.destroy_all
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     visit product_path(test_product)
@@ -16,6 +18,8 @@ describe "the update product process" do
 
   it "deletes product" do
     Product.destroy_all
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     visit product_path(test_product)

@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-08-13T12:39:45-07:00">2021-08-13T12:39:45-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-08-13T12:42:07-07:00">2021-08-13T12:42:07-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  95.87%
+  96.07%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.35
+         1.33
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>315</b> relevant lines,
-    <span class="green"><b>302</b> lines covered</span> and
+    <b>331</b> relevant lines,
+    <span class="green"><b>318</b> lines covered</span> and
     <span class="red"><b>13</b> lines missed. </span>
     (<span class="green">
-  95.87%
+  96.07%
 </span>
 )
   </div>
@@ -381,9 +381,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3a47f22e490db66effb40d58e8c7958cd97a13be" class="src_link" title="spec/features/add_product_pages_spec.rb">spec/features/add_product_pages_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">15</td>
-            <td class="cell--number">15</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -392,9 +392,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5ab48cd6327240191fab12824e1eac651fdd0d2d" class="src_link" title="spec/features/add_review_pages_spec.rb">spec/features/add_review_pages_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">27</td>
-            <td class="cell--number">21</td>
-            <td class="cell--number">21</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">25</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -414,9 +414,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#58511a756906cde71d90142e445cdf9f101a99f5" class="src_link" title="spec/features/update_product_pages_spec.rb">spec/features/update_product_pages_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">20</td>
-            <td class="cell--number">20</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">24</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -425,9 +425,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0f8666ddc7d3269a642a947fe3143b1197671381" class="src_link" title="spec/features/update_review_pages_spec.rb">spec/features/update_review_pages_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">28</td>
-            <td class="cell--number">22</td>
-            <td class="cell--number">22</td>
+            <td class="cell--number">32</td>
+            <td class="cell--number">26</td>
+            <td class="cell--number">26</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -8977,8 +8977,8 @@
     
 
     <div class="t-line-summary">
-      <b>15</b> relevant lines.
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>19</b> relevant lines.
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -9040,7 +9040,7 @@
 
             
 
-            <code class="ruby">    visit landings_path</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -9051,7 +9051,7 @@
 
             
 
-            <code class="ruby">    click_link &#39;Add a Product&#39;</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -9062,7 +9062,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;Zappo&#39;</code>
+            <code class="ruby">    visit landings_path</code>
           </li>
         </div>
       
@@ -9073,7 +9073,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Origin&#39;, :with =&gt; &#39;America&#39;</code>
+            <code class="ruby">    click_link &#39;Add a Product&#39;</code>
           </li>
         </div>
       
@@ -9084,7 +9084,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Cost&#39;, :with =&gt; 3.00</code>
+            <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;Zappo&#39;</code>
           </li>
         </div>
       
@@ -9095,7 +9095,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Product&#39;</code>
+            <code class="ruby">    fill_in &#39;Origin&#39;, :with =&gt; &#39;America&#39;</code>
           </li>
         </div>
       
@@ -9106,7 +9106,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &#39;Zappo&#39;</code>
+            <code class="ruby">    fill_in &#39;Cost&#39;, :with =&gt; 3.00</code>
           </li>
         </div>
       
@@ -9117,12 +9117,34 @@
 
             
 
+            <code class="ruby">    click_on &#39;Create Product&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content &#39;Zappo&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Product successfully added!&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -9133,7 +9155,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="14">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -9144,7 +9166,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
+          <li class="covered" data-hits="1" data-linenumber="17">
             <span class="hits">1</span>
             
 
@@ -9155,7 +9177,29 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="16">
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="20">
             <span class="hits">1</span>
             
 
@@ -9166,7 +9210,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
+          <li class="covered" data-hits="1" data-linenumber="21">
             <span class="hits">1</span>
             
 
@@ -9177,7 +9221,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
+          <li class="covered" data-hits="1" data-linenumber="22">
             <span class="hits">1</span>
             
 
@@ -9188,7 +9232,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="19">
+          <li class="never" data-hits="" data-linenumber="23">
             
             
 
@@ -9199,7 +9243,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="20">
+          <li class="never" data-hits="" data-linenumber="24">
             
             
 
@@ -9228,8 +9272,8 @@
     
 
     <div class="t-line-summary">
-      <b>21</b> relevant lines.
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>25</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -9302,7 +9346,7 @@
 
             
 
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -9313,7 +9357,7 @@
 
             
 
-            <code class="ruby">    test_product.save</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -9324,7 +9368,7 @@
 
             
 
-            <code class="ruby">    visit product_path(test_product)</code>
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -9335,7 +9379,7 @@
 
             
 
-            <code class="ruby">    click_link &#39;Add a Review&#39;</code>
+            <code class="ruby">    test_product.save</code>
           </li>
         </div>
       
@@ -9346,7 +9390,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; &#39;Barry&#39;</code>
+            <code class="ruby">    visit product_path(test_product)</code>
           </li>
         </div>
       
@@ -9357,7 +9401,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Content body&#39;, :with =&gt; &#39;This thing is great, I will never use another product, or even shop around for one&#39;</code>
+            <code class="ruby">    click_link &#39;Add a Review&#39;</code>
           </li>
         </div>
       
@@ -9368,7 +9412,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Rating&#39;, :with =&gt; 5</code>
+            <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; &#39;Barry&#39;</code>
           </li>
         </div>
       
@@ -9379,7 +9423,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Review&#39;</code>
+            <code class="ruby">    fill_in &#39;Content body&#39;, :with =&gt; &#39;This thing is great, I will never use another product, or even shop around for one&#39;</code>
           </li>
         </div>
       
@@ -9390,7 +9434,7 @@
 
             
 
-            <code class="ruby">    expect(page).to have_content &#39;Barry&#39;</code>
+            <code class="ruby">    fill_in &#39;Rating&#39;, :with =&gt; 5</code>
           </li>
         </div>
       
@@ -9401,12 +9445,34 @@
 
             
 
+            <code class="ruby">    click_on &#39;Create Review&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    expect(page).to have_content &#39;Barry&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Review successfully created!&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -9417,7 +9483,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -9428,7 +9494,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
+          <li class="covered" data-hits="1" data-linenumber="20">
             <span class="hits">1</span>
             
 
@@ -9439,35 +9505,13 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="20">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    test_product.save</code>
-          </li>
-        </div>
-      
-        <div>
           <li class="covered" data-hits="1" data-linenumber="21">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">    visit product_path(test_product)</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -9478,7 +9522,7 @@
 
             
 
-            <code class="ruby">    click_link &#39;Add a Review&#39;</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -9489,7 +9533,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Create Review&#39;</code>
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -9500,12 +9544,56 @@
 
             
 
+            <code class="ruby">    test_product.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit product_path(test_product)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_link &#39;Add a Review&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Create Review&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &quot;Author can&#39;t be blank&quot;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -9516,7 +9604,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -9527,7 +9615,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -9917,8 +10005,8 @@
     
 
     <div class="t-line-summary">
-      <b>20</b> relevant lines.
-      <span class="green"><b>20</b> lines covered</span> and
+      <b>24</b> relevant lines.
+      <span class="green"><b>24</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -9991,7 +10079,7 @@
 
             
 
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -10002,7 +10090,7 @@
 
             
 
-            <code class="ruby">    test_product.save</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -10013,7 +10101,7 @@
 
             
 
-            <code class="ruby">    visit product_path(test_product)</code>
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -10024,7 +10112,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Edit Product Details&#39;</code>
+            <code class="ruby">    test_product.save</code>
           </li>
         </div>
       
@@ -10035,7 +10123,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;Zappo&#39;</code>
+            <code class="ruby">    visit product_path(test_product)</code>
           </li>
         </div>
       
@@ -10046,7 +10134,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Origin&#39;, :with =&gt; &#39;America&#39;</code>
+            <code class="ruby">    click_on &#39;Edit Product Details&#39;</code>
           </li>
         </div>
       
@@ -10057,7 +10145,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Cost&#39;, :with =&gt; 3.00</code>
+            <code class="ruby">    fill_in &#39;Name&#39;, :with =&gt; &#39;Zappo&#39;</code>
           </li>
         </div>
       
@@ -10068,7 +10156,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Update Product&#39;</code>
+            <code class="ruby">    fill_in &#39;Origin&#39;, :with =&gt; &#39;America&#39;</code>
           </li>
         </div>
       
@@ -10079,12 +10167,34 @@
 
             
 
+            <code class="ruby">    fill_in &#39;Cost&#39;, :with =&gt; 3.00</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Update Product&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Zappo&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="15">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -10095,35 +10205,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="17">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &quot;deletes product&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    Product.destroy_all</code>
           </li>
         </div>
       
@@ -10134,7 +10222,7 @@
 
             
 
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
+            <code class="ruby">  it &quot;deletes product&quot; do</code>
           </li>
         </div>
       
@@ -10145,7 +10233,7 @@
 
             
 
-            <code class="ruby">    test_product.save</code>
+            <code class="ruby">    Product.destroy_all</code>
           </li>
         </div>
       
@@ -10156,7 +10244,7 @@
 
             
 
-            <code class="ruby">    visit product_path(test_product)</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -10167,7 +10255,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Delete&#39;</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -10178,12 +10266,56 @@
 
             
 
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    test_product.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit product_path(test_product)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Delete&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Product successfully removed!&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="24">
+          <li class="never" data-hits="" data-linenumber="28">
             
             
 
@@ -10194,7 +10326,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="25">
+          <li class="never" data-hits="" data-linenumber="29">
             
             
 
@@ -10205,7 +10337,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -10234,8 +10366,8 @@
     
 
     <div class="t-line-summary">
-      <b>22</b> relevant lines.
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>26</b> relevant lines.
+      <span class="green"><b>26</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -10297,7 +10429,7 @@
 
             
 
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -10308,7 +10440,7 @@
 
             
 
-            <code class="ruby">    test_product.save</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -10319,7 +10451,7 @@
 
             
 
-            <code class="ruby">    test_review = Review.new({:author =&gt; &quot;Bob&quot;, :rating =&gt; 4, :content_body =&gt; &quot;This thing is great, I can&#39;t believe it truly really exists&quot;, :product_id =&gt; test_product.id})</code>
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -10330,7 +10462,7 @@
 
             
 
-            <code class="ruby">    test_review.save</code>
+            <code class="ruby">    test_product.save</code>
           </li>
         </div>
       
@@ -10341,7 +10473,7 @@
 
             
 
-            <code class="ruby">    visit product_path(test_product)</code>
+            <code class="ruby">    test_review = Review.new({:author =&gt; &quot;Bob&quot;, :rating =&gt; 4, :content_body =&gt; &quot;This thing is great, I can&#39;t believe it truly really exists&quot;, :product_id =&gt; test_product.id})</code>
           </li>
         </div>
       
@@ -10352,7 +10484,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Bob&#39;</code>
+            <code class="ruby">    test_review.save</code>
           </li>
         </div>
       
@@ -10363,7 +10495,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; &#39;Barry&#39;</code>
+            <code class="ruby">    visit product_path(test_product)</code>
           </li>
         </div>
       
@@ -10374,7 +10506,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Content body&#39;, :with =&gt; &#39;This thing is great, I will never use another product, or even shop around for one&#39;</code>
+            <code class="ruby">    click_on &#39;Bob&#39;</code>
           </li>
         </div>
       
@@ -10385,7 +10517,7 @@
 
             
 
-            <code class="ruby">    fill_in &#39;Rating&#39;, :with =&gt; 5</code>
+            <code class="ruby">    fill_in &#39;Author&#39;, :with =&gt; &#39;Barry&#39;</code>
           </li>
         </div>
       
@@ -10396,7 +10528,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Update Review&#39;</code>
+            <code class="ruby">    fill_in &#39;Content body&#39;, :with =&gt; &#39;This thing is great, I will never use another product, or even shop around for one&#39;</code>
           </li>
         </div>
       
@@ -10407,12 +10539,34 @@
 
             
 
+            <code class="ruby">    fill_in &#39;Rating&#39;, :with =&gt; 5</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Update Review&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Barry&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="16">
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -10423,35 +10577,13 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
             
 
             <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="18">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  it &quot;deletes a review&quot; do</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="19">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -10462,7 +10594,7 @@
 
             
 
-            <code class="ruby">    test_product.save</code>
+            <code class="ruby">  it &quot;deletes a review&quot; do</code>
           </li>
         </div>
       
@@ -10473,7 +10605,7 @@
 
             
 
-            <code class="ruby">    test_review = Review.new({:author =&gt; &quot;Bob&quot;, :rating =&gt; 4, :content_body =&gt; &quot;This thing is great, I can&#39;t believe it truly really exists&quot;, :product_id =&gt; test_product.id})</code>
+            <code class="ruby">    user = User.create!(:email =&gt; &#39;admin@example.com&#39;, :password =&gt; &#39;adminthesite&#39;, :admin =&gt; true)</code>
           </li>
         </div>
       
@@ -10484,7 +10616,7 @@
 
             
 
-            <code class="ruby">    test_review.save</code>
+            <code class="ruby">    login_as(user, :scope =&gt; :user)</code>
           </li>
         </div>
       
@@ -10495,7 +10627,7 @@
 
             
 
-            <code class="ruby">    visit product_review_path(test_product, test_review)</code>
+            <code class="ruby">    test_product = Product.new({:name =&gt; &quot;Rice&quot;, :origin =&gt; &quot;Arizona&quot;, :cost =&gt; 30})</code>
           </li>
         </div>
       
@@ -10506,7 +10638,7 @@
 
             
 
-            <code class="ruby">    click_on &#39;Delete&#39;</code>
+            <code class="ruby">    test_product.save</code>
           </li>
         </div>
       
@@ -10517,12 +10649,56 @@
 
             
 
+            <code class="ruby">    test_review = Review.new({:author =&gt; &quot;Bob&quot;, :rating =&gt; 4, :content_body =&gt; &quot;This thing is great, I can&#39;t believe it truly really exists&quot;, :product_id =&gt; test_product.id})</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="26">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    test_review.save</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="27">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    visit product_review_path(test_product, test_review)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    click_on &#39;Delete&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
             <code class="ruby">    expect(page).to have_content &#39;Review successfully removed!&#39;</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="26">
+          <li class="never" data-hits="" data-linenumber="30">
             
             
 
@@ -10533,7 +10709,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="31">
             
             
 
@@ -10544,7 +10720,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="28">
+          <li class="never" data-hits="" data-linenumber="32">
             
             
 

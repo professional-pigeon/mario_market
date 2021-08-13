@@ -2,6 +2,8 @@ require 'rails_helper'
 
 describe "the update reviewprocess" do
   it "changes the review" do
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     test_review = Review.new({:author => "Bob", :rating => 4, :content_body => "This thing is great, I can't believe it truly really exists", :product_id => test_product.id})
@@ -16,6 +18,8 @@ describe "the update reviewprocess" do
   end
 
   it "deletes a review" do
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
     test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
     test_product.save
     test_review = Review.new({:author => "Bob", :rating => 4, :content_body => "This thing is great, I can't believe it truly really exists", :product_id => test_product.id})
