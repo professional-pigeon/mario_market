@@ -1,4 +1,8 @@
 class ReviewsController < ApplicationController
+  before_action :only => [:edit, :destroy, :show] do
+    redirect_to landings_path unless current_user && current_user.admin
+  end
+
   def new
     @product = Product.find(params[:product_id])
     @review = @product.reviews.new

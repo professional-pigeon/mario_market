@@ -16,7 +16,7 @@ User.destroy_all
                               cost: Faker::Number.between(from: 1, to: 10))
   5.times do |rev|
     Review.create!(author: Faker::Dessert.topping,
-                        content_body: Faker::Lorem.characters(number: 50),
+                        content_body: "This is a sample of a review. It's a sentence, you can enjoy the grammar and spacing",
                         rating: Faker::Number.between(from: 1, to: 5),
                         product_id: product.id)
   end
