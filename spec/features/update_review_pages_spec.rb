@@ -17,6 +17,21 @@ describe "the update review process" do
     expect(page).to have_content 'Barry'
   end
 
+  it "fail to edit a review if fields aren't filled out" do
+    user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
+    login_as(user, :scope => :user)
+    test_product = Product.new({:name => "Rice", :origin => "Arizona", :cost => 30})
+    test_product.save
+    test_review = Review.new({:author => "Bob", :rating => 4, :content_body => "This thing is great, I can't believe it truly really exists", :product_id => test_product.id})
+    test_review.save
+    visit product_path(test_product)
+    click_on 'Bob'
+    fill_in 'Author', :with => ''
+    fill_in 'Content body', :with => 'This thing is great, I will never use another product, or even shop around for one'
+    click_on 'Update Review'
+    expect(page).to have_content "Author can't be blank"
+  end
+
   it "deletes a review" do
     user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
     login_as(user, :scope => :user)

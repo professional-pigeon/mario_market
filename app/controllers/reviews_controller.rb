@@ -33,7 +33,7 @@ class ReviewsController < ApplicationController
       redirect_to product_path(@review.product)
     else
       @product = Product.find(params[:product_id])
-      render :edit
+      render :show
     end
   end
 
