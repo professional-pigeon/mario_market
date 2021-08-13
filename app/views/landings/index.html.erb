@@ -13,9 +13,9 @@
       </ul>
     </div>
     <div class="col-md-3">
-      <div class="panel">
-        <h4 class="panel-heading">Made in the USA</h4>
-        <div class="panel-body">
+      <div class="card">
+        <h4 class="card-title">Made in the USA</h4>
+        <div class="card-body">
           <% @local.each do |product| %>
           <p><%= link_to product.name, product_path(product) %></p>
           <% end %>
@@ -23,9 +23,9 @@
       </div>
     </div>
     <div class="col-md-3">
-      <div class="panel">
-        <h4 class="panel-heading">Most Reviewed Products</h4>
-        <div class="panel-body">
+      <div class="card">
+        <h4 class="card-title">Most Reviewed products</h4>
+        <div class="card-body">
           <% @reviewed.each do |product| %>
           <p><%= link_to product.name, product_path(product) %></p>
           <% end %>
@@ -33,9 +33,9 @@
       </div>
     </div>
     <div class="col-md-3">
-      <div class="panel">
-        <h4 class="panel-heading">Most Recently added</h4>
-        <div class="panel-body">
+      <div class="card">
+        <h4 class="card-title">Recently added</h4>
+        <div class="card-body">
           <% @recent.each do |product| %>
           <p><%= link_to product.name, product_path(product) %></p>
           <% end %>
