@@ -731,11 +731,11 @@
           1,
           null,
           1,
-          8,
-          8,
-          8,
-          8,
-          8,
+          11,
+          11,
+          11,
+          11,
+          11,
           null,
           null
         ]
@@ -745,7 +745,7 @@
           null,
           1,
           1,
-          7,
+          11,
           null,
           null,
           1,
@@ -802,7 +802,7 @@
         "lines": [
           1,
           1,
-          4,
+          7,
           null,
           null,
           1,
@@ -875,21 +875,21 @@
           1,
           1,
           1,
-          9,
-          9,
-          1,
-          8,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
+          12,
+          12,
           1,
           11,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          13,
           null,
           null
         ]
@@ -1074,6 +1074,43 @@
           null
         ]
       },
+      "/Users/kyleperez/Desktop/rails_specialty_foods/spec/features/user_route_prohibit_pages_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/kyleperez/Desktop/rails_specialty_foods/spec/models/product_spec.rb": {
         "lines": [
           1,
@@ -1115,6 +1152,6 @@
         ]
       }
     },
-    "timestamp": 1628891075
+    "timestamp": 1628895463
   }
 }
