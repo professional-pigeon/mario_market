@@ -21,11 +21,13 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <div style="margin-left:auto;">
-                <% if current_user %>
-                  <span class="nav-link"><%= link_to current_user.email , '/users/edit' %> | <%= link_to "Sign out", '/users/sign_out', :method => :delete %></span>
-                <% else %>
-                  <span class="nav-link"><%= link_to "Sign up", '/users/sign_up'%> | <%= link_to "Sign in", '/users/sign_in' %></span>
-                <% end %>
+                  <% if current_user && current_user.admin %>
+                    <span class="nav-link"><%= link_to "Add a Product", new_product_path %> | <%= link_to current_user.email , '/users/edit' %> | <%= link_to "Sign out", '/users/sign_out', :method => :delete %></span>
+                  <% elsif current_user %>
+                    <span class="nav-link"><%= link_to current_user.email , '/users/edit' %> | <%= link_to "Sign out", '/users/sign_out', :method => :delete %></span>
+                  <% else %>
+                    <span class="nav-link"><%= link_to "Sign up", '/users/sign_up'%> | <%= link_to "Sign in", '/users/sign_in' %></span>
+                  <% end %>
                 </div>
               </div>
             </div>

@@ -6,7 +6,7 @@
     <% if @product.reviews.any? %>
       <h3>Reviews</h3>
       <% @product.reviews.each do |review| %>
-        <p><%= link_to review.author, product_review_path(@product, review) %></p>
+        <p><%= link_to review.author, product_review_path(@product, review) %>: Gave it <%= review.rating %>/5</p>
         <p><%= review.content_body %></p>
       <% end %>
     <% else %>
@@ -14,9 +14,9 @@
     <% end %>
   </div>
   <div class="col-md-5">
-    <div class="panel">
-        <h4 class="panel-heading">Edits</h4>
-        <div class="panel-body">
+    <div class="card">
+        <h4 class="card-title">Edits</h4>
+        <div class="card-body">
           <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "You sure?", :method => "Delete"} %></p>
           <p><%= link_to "Edit Product Details", edit_product_path(@product)%>
           <p><%= link_to "Add a Review", new_product_review_path(@product) %></p>
