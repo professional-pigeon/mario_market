@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Product.destroy_all
+User.destroy_all
 
 
 50.times do |index|
@@ -16,9 +17,11 @@ Product.destroy_all
   5.times do |rev|
     Review.create!(author: Faker::Dessert.topping,
                         content_body: Faker::Lorem.characters(number: 50),
-                        rating: Faker::Number.between(from: 1, to: 10),
+                        rating: Faker::Number.between(from: 1, to: 5),
                         product_id: product.id)
   end
 end
+
+User.create!(:email => 'admin@admin.com', :password => 'adminthesite', :admin => true)
 
 p "Created #{Product.count} Products with 5 reviews each"
