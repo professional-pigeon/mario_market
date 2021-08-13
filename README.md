@@ -1,6 +1,6 @@
-# Mario's Market
+# Vocab_adder
 
-#### Mario's Market
+#### Vocab_adder
 
 #### By Kyle Kay-Perez
 
@@ -8,6 +8,9 @@
 - [Technologies Used](#technologies-used)
 - [Description](#description)
 - [Setup/Installation Requirements](#setup/installation-requirements)
+- [Known Bugs](#known-bugs)
+- [Valid Word Tests](#valid-word-tests)
+- [Future Plans](#future-plans)
 - [License](#license)
 - [Contact Information](#contact-information)
 
@@ -16,24 +19,26 @@
 * [Markdown](https://www.markdownguide.org/)
 * [VS studio](https://code.visualstudio.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Rails](https://rubyonrails.org/)
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Ruby Gems](https://rubygems.org/)
-* [postgreSQL](https://www.postgresql.org/)
 
 ## Description
 
-This is a program for a market
+This is a program dedicated to adding words and definitions for class learning.
+
+You can see the website [here](https://murmuring-waters-75236.herokuapp.com/)
 
 ## Setup/Installation Requirements
 
 * Clone this repository from github to your desktop: [Github link for this project](https://github.com/professional-pigeon/Vocab_charity)
 * navigate to the top level of the directory
 * run "gem install bundler" then "bundle install" in your terminal
-* Install [postgreSQL](https://www.postgresql.org/) using instructions for your OS on their website.
-* To use application you'll need to open a postgres server in a terminal and a rails server
-* install all dependencies with bundle install
-* in your terminal you can run 'rspec' to run all tests, and 'ruby app.rb' to run the website while your postgres server is running.
+* To run tests run "rspec" in your terminal
+
+
+## Known Bugs
+
+* You can create blank entries or update blank definitions currently
 
 ## License
 
