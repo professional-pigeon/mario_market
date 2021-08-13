@@ -1,6 +1,6 @@
 
 class LandingsController < ApplicationController
-  before_action :authenticate_user!, :except => [:index]
+  skip_before_action :authenticate_user!, :only => [:index]
   def index
     @products = Product.all
     @local = Product.local

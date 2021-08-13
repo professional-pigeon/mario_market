@@ -692,7 +692,8 @@
         "lines": [
           1,
           1,
-          null,
+          1,
+          1,
           1,
           null,
           1,
@@ -704,6 +705,11 @@
       "/Users/kyleperez/Desktop/rails_specialty_foods/app/helpers/application_helper.rb": {
         "lines": [
           1,
+          1,
+          1,
+          0,
+          null,
+          null,
           null
         ]
       },
@@ -728,6 +734,7 @@
           null,
           1,
           1,
+          1,
           8,
           8,
           8,
@@ -741,6 +748,9 @@
         "lines": [
           null,
           1,
+          1,
+          5,
+          null,
           null,
           1,
           0,
@@ -1090,6 +1100,6 @@
         ]
       }
     },
-    "timestamp": 1628883727
+    "timestamp": 1628884459
   }
 }
