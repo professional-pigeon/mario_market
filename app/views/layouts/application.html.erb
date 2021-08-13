@@ -22,7 +22,7 @@
                 <div class="navbar-nav">
                   <div style="margin-left:auto;">
                   <% if current_user %>
-                    <span class="nav-link"><%= link_to current_user.user_name , '/users/edit' %> | <%= link_to "Sign out", '/users/sign_out', :method => :delete %></span>
+                    <span class="nav-link"><%= link_to current_user.email , '/users/edit' %> | <%= link_to "Sign out", '/users/sign_out', :method => :delete %></span>
                   <% else %>
                     <span class="nav-link"><%= link_to "Sign up", '/users/sign_up'%> | <%= link_to "Sign in", '/users/sign_in' %></span>
                   <% end %>
