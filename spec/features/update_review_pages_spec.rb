@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "the update reviewprocess" do
+describe "the update review process" do
   it "changes the review" do
     user = User.create!(:email => 'admin@example.com', :password => 'adminthesite', :admin => true)
     login_as(user, :scope => :user)

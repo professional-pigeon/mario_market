@@ -1,16 +1,7 @@
 
 class ProductsController < ApplicationController
   before_action :only => [:new, :edit, :create, :destroy] do
-    flash[:notice] = "Area reserved for admins"
     redirect_to landings_path unless current_user && current_user.admin
-  end
-
-  def index
-    @products = Product.all
-    @local = Product.local
-    @recent = Product.most_recent
-    @reviewed = Product.most_reviews
-    render :index
   end
 
   def new

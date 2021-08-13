@@ -1,6 +1,5 @@
 class ReviewsController < ApplicationController
   before_action :only => [:edit, :destroy, :show] do
-    flash[:notice] = "Area reserved for admins"
     redirect_to landings_path unless current_user && current_user.admin
   end
 
@@ -25,12 +24,6 @@ class ReviewsController < ApplicationController
     @product = Product.find(params[:product_id])
     @review = Review.find(params[:id])
     render :show
-  end
-
-  def edit
-    @product = Product.find(params[:product_id])
-    @review = Review.find(params[:id])
-    render :edit
   end
 
   def update
