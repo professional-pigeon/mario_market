@@ -6,7 +6,11 @@
     <% if @product.reviews.any? %>
       <h3>Reviews</h3>
       <% @product.reviews.each do |review| %>
-        <p><%= link_to review.author, product_review_path(@product, review) %>: Gave it <%= review.rating %>/5</p>
+        <% if current_user && current_user.admin %>
+          <p><%= link_to review.author, product_review_path(@product, review) %>: Gave it <%= review.rating %>/5</p>
+        <% else %>
+          <p><%= review.author %>: Gave it <%= review.rating %>/5</p>
+        <% end %>
         <p><%= review.content_body %></p>
       <% end %>
     <% else %>
@@ -17,8 +21,10 @@
     <div class="card">
         <h4 class="card-title">Edits</h4>
         <div class="card-body">
+          <% if current_user && current_user.admin %>
           <p><%= link_to "Delete", product_path(@product), :data => {:confirm => "You sure?", :method => "Delete"} %></p>
           <p><%= link_to "Edit Product Details", edit_product_path(@product)%>
+          <% end %>
           <p><%= link_to "Add a Review", new_product_review_path(@product) %></p>
           <p><%= link_to "Return to main page", landings_path%></p>
         </div>
