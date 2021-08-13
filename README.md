@@ -8,9 +8,6 @@
 - [Technologies Used](#technologies-used)
 - [Description](#description)
 - [Setup/Installation Requirements](#setup/installation-requirements)
-- [Known Bugs](#known-bugs)
-- [Valid Word Tests](#valid-word-tests)
-- [Future Plans](#future-plans)
 - [License](#license)
 - [Contact Information](#contact-information)
 
@@ -21,25 +18,22 @@
 * [Bootstrap](https://getbootstrap.com/)
 * [Ruby](https://www.ruby-lang.org/en/)
 * [Ruby Gems](https://rubygems.org/)
+* [Postgresql](https://www.postgresql.org/)
+* [Rails](https://rubyonrails.org/)
 
 ## Description
 
-This is a program dedicated to adding words and definitions for class learning.
-
-You can see the website [here](https://murmuring-waters-75236.herokuapp.com/)
+This is a website designed to be a rudimentary market.
 
 ## Setup/Installation Requirements
 
-* Clone this repository from github to your desktop: [Github link for this project](https://github.com/professional-pigeon/Vocab_charity)
-* navigate to the top level of the directory
-* run "gem install bundler" then "bundle install" in your terminal
-* To run tests run "rspec" in your terminal
-
-
-## Known Bugs
-
-* You can create blank entries or update blank definitions currently
-
+* Ruby is required, follow the download instructions here [Ruby](https://www.ruby-lang.org/en/)
+* Download database from github repository [here] (https://github.com/professional-pigeon/mario_market)
+* Install bundler in your terminal using gem install bundler, then bundle all gems with the terminal command "bundle install".
+* Install postgres if not already installed and run the terminal command "postgres".
+* Start a server using the command "rails s" and open the server in a browser.
+* Run command "rake db:seed" to seed sample data and create and admin user. Admin account info is in the seed file, will be removed when website is live.
+* To run test run the command "rspec" in the root directory of the terminal.
 ## License
 
 MIT License
