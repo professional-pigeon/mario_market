@@ -1,0 +1,19 @@
+<br>
+  <h1 id="header">Here is a list of products</h1>
+<br>
+
+
+<% if @products.any? %>
+  <div class="row">
+    <div class="col-md-3">
+    <h4>Here is a list of all of our products</h4>
+      <ul>
+        <% @products.each do |product| %>
+          <li><%= link_to product.name, product_path(product) %></li>
+        <% end%>
+      </ul>
+    </div>
+  </div>
+<% else %>
+  <p>No products have been created yet</p>
+<% end %>

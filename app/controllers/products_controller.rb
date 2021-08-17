@@ -4,6 +4,11 @@ class ProductsController < ApplicationController
     redirect_to landings_path unless current_user && current_user.admin
   end
 
+  def index
+    @products = Product.all
+    render :index
+  end
+
   def new
     @product = Product.new
     render :new

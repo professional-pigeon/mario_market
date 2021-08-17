@@ -6,12 +6,7 @@
 <% if @products.any? %>
   <div class="row">
     <div class="col-md-3">
-    <h4>Here is a list of all of our products</h4>
-      <ul>
-        <% @products.each do |product| %>
-          <li><%= link_to product.name, product_path(product) %></li>
-        <% end%>
-      </ul>
+    <h4><%= link_to "Click here to go to a list of all the products", products_path %></h4>
     </div>
     <div class="col-md-3">
       <div class="card">
