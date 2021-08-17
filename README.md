@@ -20,6 +20,12 @@
 * [Ruby Gems](https://rubygems.org/)
 * [Postgresql](https://www.postgresql.org/)
 * [Rails](https://rubyonrails.org/)
+* Bundler
+* Faker
+* SimpleCov
+* Devise
+* RSpec
+* Pry
 
 ## Description
 
@@ -28,12 +34,14 @@ This is a website designed to be a rudimentary market.
 ## Setup/Installation Requirements
 
 * Ruby is required, follow the download instructions here [Ruby](https://www.ruby-lang.org/en/)
-* Download database from github repository [here] (https://github.com/professional-pigeon/mario_market)
-* Install bundler in your terminal using gem install bundler, then bundle all gems with the terminal command "bundle install".
+* Install bundler in your terminal with "gem install bundler"
 * Install postgres if not already installed and run the terminal command "postgres" to open a SQL server.
-* Start a server using the command "rails s" and open the server in a browser.
+* Download database from github repository [here] (https://github.com/professional-pigeon/mario_market)
+* Navigate to the top level of the directory and run "bundle install" in your terminal to install dependencies
 * Run command "rake db:seed" to seed sample data and create and admin user. Admin account info is in the seed file, will be removed when website is live.
+* Run the site on your local machine using the terminal command "rails s" and navigate to localhost:3000 (or address provided when server starts)
 * To run tests run the command "rspec" in the root directory of the terminal.
+
 ## License
 
 MIT License
