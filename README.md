@@ -20,12 +20,6 @@
 * [Postgresql](https://www.postgresql.org/)
 * [Rails](https://rubyonrails.org/)
 * [Ruby Gems](https://rubygems.org/)
-* Bundler
-* Faker
-* SimpleCov
-* Devise
-* RSpec
-* Pry
 
 ## Description
 
