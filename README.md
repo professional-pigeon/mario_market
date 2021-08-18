@@ -17,9 +17,9 @@
 * [VS studio](https://code.visualstudio.com/)
 * [Bootstrap](https://getbootstrap.com/)
 * [Ruby](https://www.ruby-lang.org/en/)
-* [Ruby Gems](https://rubygems.org/)
 * [Postgresql](https://www.postgresql.org/)
 * [Rails](https://rubyonrails.org/)
+* [Ruby Gems](https://rubygems.org/)
 * Bundler
 * Faker
 * SimpleCov
@@ -38,6 +38,7 @@ This is a website designed to be a rudimentary market.
 * Install postgres if not already installed and run the terminal command "postgres" to open a SQL server.
 * Download database from github repository [here] (https://github.com/professional-pigeon/mario_market)
 * Navigate to the top level of the directory and run "bundle install" in your terminal to install dependencies
+* Run "rake db:create" and then "rake db:migrate" to create a database and migrate tables.
 * Run command "rake db:seed" to seed sample data and create and admin user. Admin account info is in the seed file, will be removed when website is live.
 * Run the site on your local machine using the terminal command "rails s" and navigate to localhost:3000 (or address provided when server starts)
 * To run tests run the command "rspec" in the root directory of the terminal.
