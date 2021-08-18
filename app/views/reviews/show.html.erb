@@ -6,3 +6,4 @@
 <%= render "layouts/add_review" %>
 
 <p><%= link_to "Delete", product_review_path(@product, @review), :data => {:confirm => "You sure?", :method => "Delete"} %></p>
+<p><%= link_to "Return to previous page", product_path(@product) %></p>
